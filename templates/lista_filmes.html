@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        li{
+            list-style: none;
+            text-align: center;
+        }
+        ul{
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Filmes:</h1> <hr>
+    <br>
+    <ul>
+        {% for filme in filmes %}
+        <li><strong>Título:</strong> {{filme.titulo}}</li>
+        <li><strong>Valor:</strong> {{filme.valor}}</li>
+        <li><strong>Categoria:</strong> {{filme.categoria}}</li>
+    </ul>
+    <br>
+    {% endfor %}
+</body>
+</html>
